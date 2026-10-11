@@ -2,9 +2,9 @@
 
 2026-10-07：小遊戲介紹改用兩張原生 PNG 截圖，完整保留 Game_claude 對話框、圖塊、介面與文字，未重繪。
 
-- `assets/images/screenshots/story-route.png`：朔・鐘樓逃生路線，5×5 街區初始畫面。
-- `assets/images/screenshots/story-map-puzzle.png`：迪普霍姆・礦坑地圖，工坊試玩已拼合 2/4 畫面。
-- `assets/images/screenshots/story-shield-rhythm.png`：格蘭・撐盾救援（坦克第 3 章），節奏小遊戲遊玩中畫面。
+- `assets/images/screenshots/story-route.webp`：朔・鐘樓逃生路線，5×5 街區初始畫面。
+- `assets/images/screenshots/story-map-puzzle.webp`：迪普霍姆・礦坑地圖，工坊試玩已拼合 2/4 畫面。
+- `assets/images/screenshots/story-shield-rhythm.webp`：格蘭・撐盾救援（坦克第 3 章），節奏小遊戲遊玩中畫面。
 - 以上三張皆於 2026-10-11 由最新版 Game_claude 的 story.html 重新擷取（1440×1400 視窗，未修圖），來源見 manifest.json。
 - 在獨立瀏覽器中開啟原遊戲內建試玩，未讀取或改動使用者遊戲存檔。來源及雜湊见同目錄 `manifest.json`。
 - 原作品集世界地圖與路塊資產仍保存在素材資料夾，但不再用作可操作小遊戲。下方清單為素材匯入紀錄。

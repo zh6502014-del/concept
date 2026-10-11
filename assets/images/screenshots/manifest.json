@@ -2,7 +2,7 @@
   "capturedAt": "2026-10-11",
   "screenshots": [
     {
-      "path": "assets/images/screenshots/story-route.png",
+      "path": "assets/images/screenshots/story-route.webp",
       "source": "Game_claude/Nightfall-Duel-Story.html",
       "scene": "escape-tiles",
       "api": "NDStoryMaze",
@@ -11,12 +11,12 @@
         "width": 1440,
         "height": 1400
       },
-      "capture": "Original game dialog screenshot, no image editing",
+      "capture": "Original game dialog screenshot, no image editing; converted to WebP q80 for web (originals in source-screenshots/)",
       "state": "initial",
-      "sha256": "59e51640456c3d7b88ae2f67631d6bdadd0f081a52bc7a3cad8a5e42b50677aa"
+      "sha256": "5698e6c7d5ebb6773fb769ff69af8845ad37801c1cd91c66b38adf8512b0f087"
     },
     {
-      "path": "assets/images/screenshots/story-map-puzzle.png",
+      "path": "assets/images/screenshots/story-map-puzzle.webp",
       "source": "Game_claude/Nightfall-Duel-Story.html",
       "scene": "archive",
       "api": "NDStoryPuzzles",
@@ -25,12 +25,12 @@
         "width": 1440,
         "height": 1400
       },
-      "capture": "Original game dialog screenshot, no image editing",
+      "capture": "Original game dialog screenshot, no image editing; converted to WebP q80 for web (originals in source-screenshots/)",
       "state": "archive-0 and archive-3 placed; 2/4",
-      "sha256": "aa63532bb6535c1e8ee581e518aa3cc1836881ff66b33207df7065600ed7bb0a"
+      "sha256": "c3463c8d088b7e17530e625bd605d418c9f37521e8d9015e41b09c0a47ecc6e9"
     },
     {
-      "path": "assets/images/screenshots/story-shield-rhythm.png",
+      "path": "assets/images/screenshots/story-shield-rhythm.webp",
       "source": "Game_claude/story.html",
       "scene": "tank-shield (T3)",
       "api": "NDShieldRhythm",
@@ -39,9 +39,9 @@
         "width": 1440,
         "height": 1400
       },
-      "capture": "Original game dialog screenshot, no image editing",
+      "capture": "Original game dialog screenshot, no image editing; converted to WebP q80 for web (originals in source-screenshots/)",
       "state": "playing, wave 1, about 1.5s after count-in",
-      "sha256": "226dffbc03f85c134da1d7601b97a07bdad9d555b80f303a111bc39b15a5cd04"
+      "sha256": "c67ebf98f458df710768b6dd627af204d157a0ebfedbd8ec87c994ec416a7072"
     }
   ]
 }

@@ -86,19 +86,19 @@ const ASSETS={
     "title": "赫爾曼"
   },
   "story-route": {
-    "path": "assets/images/screenshots/story-route.png",
+    "path": "assets/images/screenshots/story-route.webp",
     "width": 600,
     "height": 870,
     "title": "朔・鐘樓逃生路線"
   },
   "story-map-puzzle": {
-    "path": "assets/images/screenshots/story-map-puzzle.png",
+    "path": "assets/images/screenshots/story-map-puzzle.webp",
     "width": 1040,
     "height": 1212,
     "title": "迪普霍姆・礦坑地圖"
   },
   "story-shield-rhythm": {
-    "path": "assets/images/screenshots/story-shield-rhythm.png",
+    "path": "assets/images/screenshots/story-shield-rhythm.webp",
     "width": 960,
     "height": 716,
     "title": "格蘭・撐盾救援"
