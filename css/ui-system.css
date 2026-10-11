@@ -1,0 +1,50 @@
+/* Shared visual rules for every portfolio page. Layout remains in book-layout.css. */
+:root{--ui-title:32px;--ui-body:14px;--ui-small:12px;--ui-radius:4px;--ui-space:24px;--photo-paper:#eee9dc;--photo-border:#c8c0ac;--photo-shadow:0 9px 24px #14271d40}
+.book-content{font-size:var(--ui-body);line-height:1.9}
+.book h2,.book .statement,.book .character-detail h2,.book .screenshot-feature h2{font-size:var(--ui-title);line-height:1.6;letter-spacing:.025em;font-weight:500}
+.book-content p{line-height:1.9}
+.book .world-caption,.book .cover-copy,.book .tab-content,.book .author-intro,.book .rules-guide{font-size:var(--ui-body)}
+.book .note{font-size:var(--ui-small);line-height:1.8}
+.book .quote{font-size:24px;line-height:1.7;margin:var(--ui-space) 0;padding:8px 0 8px 20px;border-left:2px solid var(--gold)}
+.spread-label{margin-bottom:var(--ui-space);padding-bottom:12px;font-size:10px;line-height:1.6;letter-spacing:.08em}
+.scene-meta{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 24px}
+.book .tag{font-family:var(--typeface);font-size:11px;font-weight:400;line-height:1.6;padding:4px 10px;border:1px solid var(--line);border-radius:var(--ui-radius);background:transparent;color:var(--muted)}
+.book.dark .tag{border-color:#ffffff40;color:#dce3d6}
+.actions{gap:8px;margin-top:var(--ui-space)}
+.btn{border-radius:var(--ui-radius);min-height:44px;padding:10px 16px;font-size:14px;line-height:1.5}
+.book-content .btn.small{font-size:12px;padding:8px 12px}
+.book-content .btn.ghost{color:var(--ink);background:transparent;border-color:var(--line)}
+.book.dark .book-content .btn.ghost{color:var(--paper);border-color:#ffffff55}
+.tab,.rules-tabs button{min-height:44px;padding:8px 12px;border-radius:var(--ui-radius);font-size:13px;line-height:1.6}
+.tab[aria-pressed=true],.rules-tabs button[aria-selected=true],.character-choice[aria-pressed=true]{background:var(--green);color:var(--paper);border-color:var(--green)}
+.character-choice{border-radius:var(--ui-radius);min-height:48px;gap:12px}
+.rules-detail,.rules-examples article,.page-option,.toc-item{border-radius:var(--ui-radius)}
+.rules-detail summary{font-size:14px;line-height:1.7;padding:16px}
+.rules-section>h3{font-size:18px;line-height:1.6}
+.world-photo,.story-photo{padding:6px;background:var(--photo-paper);border:1px solid var(--photo-border);box-shadow:var(--photo-shadow)}
+.world-photo figcaption,.story-photo figcaption{font-family:var(--typeface);font-size:11px;font-weight:400;line-height:1.7;padding:7px 6px 3px;letter-spacing:.06em;color:var(--ink)}
+.world-photo.is-front{border-color:var(--gold)}
+.book>.reader-footer .btn,.book.dark>.reader-footer .btn.primary{background:transparent;border-color:transparent;color:inherit;min-height:40px;font-size:12px}
+.book>.reader-footer .btn:hover:not(:disabled){background:#94794012}
+.book.dark>.reader-footer .btn:hover:not(:disabled){background:#ffffff12}
+button:focus-visible,a:focus-visible,summary:focus-visible,[data-draggable]:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(hover:hover){.tab:not([aria-pressed=true]):hover,.rules-tabs button:not([aria-selected=true]):hover,.character-choice:not([aria-pressed=true]):hover{background:var(--paper2)}}
+@media(max-width:680px){
+ :root{--ui-title:clamp(22px,6.7vw,28px);--ui-space:20px}
+ .book .quote{font-size:21px;padding-left:14px}
+ .scene-meta{margin:12px 0 20px;gap:6px}
+ .book .tag{padding:3px 7px}
+ .world-photo,.story-photo{padding:4px}
+ .world-photo figcaption,.story-photo figcaption{font-size:10px;padding:5px 4px 2px}
+ .book>.reader-footer .btn{font-size:10px;min-height:44px;padding:6px 4px}
+ .book>.reader-footer .footer-center{min-width:0}
+ .book>.reader-footer .page-picker{letter-spacing:0;font-size:9px}
+ .book .cover-title{font-size:clamp(20px,7vw,36px)}
+ .book-content .actions>.btn{max-width:100%;overflow-wrap:anywhere}
+ .character-choice{gap:6px;padding:10px 7px;flex-wrap:wrap}
+ .rules-tabs button{padding:8px 4px;font-size:12px}
+ .spread-label{overflow-wrap:anywhere}
+ .reading-layout .chapter-btn{flex-direction:row;justify-content:flex-start;gap:6px;padding:0 6px;height:48px;min-height:48px}
+ .reading-layout .chapter-name{max-width:none;white-space:nowrap;writing-mode:horizontal-tb;font-size:11px;letter-spacing:0;text-align:left}
+ .reading-layout .chapter-num{font-size:9px;flex-shrink:0}
+}

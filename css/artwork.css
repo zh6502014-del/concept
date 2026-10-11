@@ -1,0 +1,136 @@
+/* V0.2 — fixed-width book shell with replaceable external assets. */
+:root{--book-max:1240px;--art-gold:#c1a56c}
+.shell{max-width:var(--book-max)}
+.book,.book.single{width:100%;max-width:none;margin-inline:0}
+figure{margin:0}
+.art-image{display:block;width:100%;height:auto;min-width:0}
+.art-cover{background-image:linear-gradient(90deg,rgba(11,24,21,.88),rgba(15,29,25,.52) 58%,rgba(13,25,23,.75)),url('../assets/images/scenes/vesperland.webp')!important;background-size:cover!important;background-position:56% 48%!important}
+.art-cover .fullspread{padding-bottom:48px}
+.art-cover .cover-index{border-left-color:#dcc99566;background:#11251d5e;padding-right:18px;padding-top:7px;padding-bottom:7px;backdrop-filter:blur(3px)}
+.art-cover .cover-title{color:#fff8e6;text-shadow:0 3px 18px #04170fb0}
+.art-cover .cover-copy,.art-cover .note,.art-cover .cover-item small{color:#eee8d6}
+.cover-item strong{color:#fff7e3}
+.world-art{position:relative;min-width:0;aspect-ratio:1.28;overflow:hidden;background:#263e34;border:1px solid #9b9f87}
+.world-art .art-image{position:absolute;inset:0;height:100%;object-fit:cover;object-position:71% 50%}
+.world-art figcaption{position:absolute;bottom:0;left:0;right:0;padding:35px 15px 15px;background:linear-gradient(transparent,#0e231be8);color:#fff0d4;font-size:11px;letter-spacing:.06em}
+.world-art.return-art .art-image{filter:saturate(.6) brightness(.82)}
+.portrait-art{position:relative;aspect-ratio:1.32;overflow:hidden;background:#263e34;margin:17px 0 23px;border:1px solid #a2aa95}
+.portrait-art .art-image{height:100%;object-fit:cover;object-position:50% 27%}
+.portrait-art figcaption{position:absolute;bottom:0;left:0;right:0;color:#f8ebce;padding:34px 18px 12px;font-size:11px;letter-spacing:.14em;background:linear-gradient(transparent,#102519d9)}
+.character-choice[aria-pressed=true]{border-left:4px solid var(--art-gold)}
+.scene-art{padding:0;border:1px solid #aaad92;min-height:0;aspect-ratio:1.45;overflow:hidden;background:#203229}
+.scene-art>.art-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.scene-art .hotspot{padding:7px 8px;background:#f9f1ddf0;border-color:#cfb57b;font-size:10px;box-shadow:0 2px 14px #05170a70;z-index:2}
+.scene-art .hotspot[aria-pressed=true]{background:#263e34;color:#fff3d5;outline:2px solid #e8cb84;outline-offset:2px}
+.scene-art .graphic-note{bottom:0;left:0;width:100%;color:#f6ecd5;background:#14271dbb;padding:6px 10px}
+.demo-card .card-art{width:79px;height:auto;max-width:90%}
+.demo-card{padding:17px 10px;background:#eeeadd}
+.demo-card[aria-pressed=true]{box-shadow:inset 0 0 0 1px var(--gold)}
+.battle-book .battle-layout{position:relative;background:linear-gradient(#172b207c,#172b2080),url('../assets/images/scenes/research-lab.webp') center/cover;padding:22px;gap:20px;border:1px solid #877a59;align-items:center}
+.battle-book .fighter{background:#f4f0e4f2;border:1px solid #a79770;box-shadow:0 3px 18px #00170b33;padding:16px;overflow:hidden}
+.fighter-portrait{height:122px;margin:-16px -16px 12px;overflow:hidden;background:#263e34}
+.fighter-portrait .art-image{width:100%;height:100%;object-fit:cover;object-position:50% 29%}
+.battle-book .arena-slot{background:#efe8d8f2;border-color:#c5ac78;box-shadow:0 3px 12px #0a1d1a44;min-height:161px}
+.battle-book .arena-slot.back{background:#263e34;color:#e3d2a8}
+.arena-slot .card-art{width:60px;height:84px;object-fit:contain}
+.battle-book .vs{color:#f8e6bc;text-shadow:0 2px 8px #000}
+.hand-card .card-art{width:42px;height:59px;object-fit:contain}
+.hand-card{background:#f3efdf}
+.hand-card[aria-pressed=true]{border-color:#9d8043;box-shadow:inset 0 0 0 1px #9d8043}
+.module-art{height:154px;overflow:hidden;border:1px solid #b6a47a;margin-bottom:22px}
+.module-art .art-image{height:100%;object-fit:cover;object-position:50% 50%}
+.pipe-wrapper{background:#e3dfd0;border-color:#918465}
+.pipe-grid{background:#887b59;gap:5px;border:1px solid #736544;padding:5px}
+.pipe-tile{padding:0!important;overflow:hidden;border-color:#8e835d;background:#23362c}
+.pipe-tile .pipe-art{width:100%;height:100%;display:block;transform-origin:50% 50%}
+.pipe-index,.pipe-lock{color:#fff7dc;background:#182b22e8;padding:2px 3px;z-index:1;border-radius:2px}
+.pipe-index{top:3px;left:3px}.pipe-lock{right:3px;bottom:3px}
+.pipe-tile.connected{box-shadow:inset 0 0 0 2px #e4c984}
+.pipe-tile.hinted{outline:3px solid #e9bd42;outline-offset:-4px}
+.puzzle-image-grid{background:#6a5c3e;border-color:#998053}
+.jigsaw-tile{border-color:#927b53}
+.jigsaw-tile.selected{outline-color:#ffca4b}
+.original-blueprint{display:block}
+.art-colophon{background-image:linear-gradient(#172c24e8,#172c24e8),url('../assets/images/scenes/vesperland.webp')!important;background-position:70% 50%!important;background-size:cover!important}
+.author-page .author-name{color:#283f32}
+.author-page .author-role{color:#806b3d}
+@media(max-width:900px){.battle-book .battle-layout{padding:17px;gap:12px}.fighter-portrait{height:105px}.world-art{aspect-ratio:1.04}}
+@media(max-width:680px){
+.art-cover{background-image:linear-gradient(#10271eda,#14291fe8),url('../assets/images/scenes/vesperland.webp')!important;background-position:65% 50%!important}
+.art-cover .cover-index{border-left:0;padding:6px 0 0;background:none;backdrop-filter:none}
+.art-cover .fullspread{padding-bottom:29px}
+.world-art{aspect-ratio:1.5}.world-art figcaption{font-size:10px;padding:30px 12px 11px}
+.portrait-art{aspect-ratio:1.15;max-height:355px}.portrait-art .art-image{object-position:50% 25%}
+.scene-art{aspect-ratio:1.23}.scene-art .hotspot{font-size:9px;padding:6px;min-height:36px}.scene-art .graphic-note{font-size:8px}
+.demo-card .card-art{width:65px}.demo-card{min-height:165px}
+.battle-book .battle-layout{padding:13px;gap:13px;background-image:linear-gradient(#172b20b0,#172b2090),url('../assets/images/scenes/research-lab.webp')}
+.battle-book .fighter{padding:12px}.fighter-portrait{height:107px;margin:-12px -12px 10px}
+.battle-book .fighter-heading{display:block}.battle-book .fighter-heading strong{display:block;font-size:18px}.battle-book .fighter-heading span{display:block;font-size:9px}
+.battle-book .arena{gap:15px;min-height:155px}.battle-book .arena-slot{width:92px;min-height:158px;height:auto;padding:12px 7px}
+.hand-card .card-art{width:35px;height:49px}.hand-card{min-height:138px}.hand-card svg{width:25px}
+.module-art{height:170px}.pipe-grid{gap:4px;padding:4px}
+.art-colophon{background-image:linear-gradient(#172c24e8,#172c24e8),url('../assets/images/scenes/vesperland.webp')!important}
+}
+@media(max-width:360px){.battle-book .battle-layout{padding:9px;gap:8px}.battle-book .fighter{padding:9px}.fighter-portrait{margin:-9px -9px 9px;height:90px}.battle-book .arena{gap:10px}.battle-book .arena-slot{width:78px}.fighter .note{font-size:9px}}
+
+/* Game_claude original actors are transparent full-body art. */
+.portrait-art .art-image{object-fit:contain;object-position:50% 100%}
+.portrait-art{background:radial-gradient(ellipse at 50% 35%,#637367,#253b32 75%)}
+.fighter-portrait .art-image{object-fit:contain;object-position:50% 0}
+.scene-art{aspect-ratio:16 / 9}
+.scene-art>.art-image{object-fit:contain}
+.module-art{height:auto;aspect-ratio:16 / 9}
+.module-art .art-image{object-fit:contain}
+.jigsaw-tile{aspect-ratio:1066 / 900}
+
+/* Detailed rules stay on the existing leaf; advanced topics expand in place. */
+.rules-guide{font-size:14px;line-height:1.85}
+.rules-lead{margin:22px 0;color:var(--muted)}
+.rules-scope{padding:20px;background:var(--paper2);border-left:3px solid var(--gold);margin-top:24px}
+.rules-guide p+p{margin-top:12px}
+.rules-section{margin-top:32px}
+.rules-section>h3{font-size:19px;margin-bottom:16px}
+.rules-guide ul,.rules-guide ol{padding-left:23px;margin:14px 0}
+.rules-guide li+li{margin-top:12px}
+.rules-examples{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.rules-examples article{padding:18px;border:1px solid var(--line);background:var(--paper2);min-width:0}
+.rules-examples h4{font-size:15px;margin:0 0 10px}
+.rules-examples article>strong{display:block;margin-top:12px;color:var(--green)}
+.rules-detail{border-top:1px solid var(--line);margin-top:12px}
+.rules-detail:last-child{border-bottom:1px solid var(--line)}
+.rules-detail summary{padding:17px 6px;cursor:pointer;font-weight:600;min-height:44px;line-height:1.65}
+.rules-detail summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.rules-detail[open] summary{color:var(--green)}
+.rules-detail-body{padding:0 6px 20px}
+.rules-guide .rule-description{min-height:0}
+@media(max-width:680px){.rules-examples{grid-template-columns:1fr}.rules-scope{padding:16px}.rules-section>h3{font-size:17px}.rules-guide{font-size:14px}.rules-section{margin-top:26px}}
+
+.rules-compare table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:13px}
+.rules-compare caption{text-align:left;color:var(--muted);margin-bottom:12px}
+.rules-compare th,.rules-compare td{padding:12px 9px;border:1px solid var(--line);vertical-align:top;text-align:left;overflow-wrap:anywhere}
+.rules-compare thead{background:var(--green);color:var(--paper)}
+.rules-compare th:first-child{width:21%}
+.story-energy-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--paper2);padding:16px;margin:20px 0}
+.story-energy-row>span{font-size:11px;color:var(--muted)}
+.story-turn-marker{text-align:center;color:var(--paper);font-size:20px}
+.story-turn-marker small{display:block;font-size:12px;line-height:1.8;margin-top:12px}
+.story-action-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.story-action-grid>section{padding:20px;border:1px solid var(--line);background:var(--paper2)}
+.story-action-grid h3{font-size:20px;margin-bottom:12px}
+.story-action-grid p{font-size:13px;margin:12px 0}
+.story-training .battle-result p{margin:6px 0;font-size:13px}
+@media(max-width:680px){.story-action-grid{grid-template-columns:1fr}.story-turn-marker{grid-column:1 / -1;grid-row:2;font-size:16px}.story-energy-row{font-size:12px}.story-energy-row>span{width:100%;order:3}.rules-compare th,.rules-compare td{padding:8px 5px;font-size:12px}}
+
+/* Mini-games are documentary screenshots, with no playable controls. */
+.screenshot-feature{display:grid;grid-template-columns:minmax(230px,.8fr) minmax(0,1.2fr);gap:36px;align-items:start}
+.screenshot-feature h2{margin:16px 0 24px}
+.screenshot-feature section>p{font-size:14px;margin:18px 0}
+.game-screenshot{width:100%;max-width:650px;margin-inline:auto}
+.game-screenshot .art-image{height:auto;object-fit:contain;border:1px solid var(--line)}
+.game-screenshot figcaption{font-size:11px;color:var(--muted);line-height:1.7;margin-top:12px}
+.screenshot-previews{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.screenshot-previews img{height:250px;object-fit:contain;object-position:top;background:#10231e}
+.screenshot-previews figcaption{margin-top:14px;font-size:13px}
+.screenshot-previews figcaption p{margin-top:8px;font-size:12px}
+@media(max-width:900px){.screenshot-feature{grid-template-columns:1fr;gap:24px}.game-screenshot{max-width:600px}}
+@media(max-width:480px){.screenshot-previews{grid-template-columns:1fr}.screenshot-previews img{height:auto;max-height:390px}.screenshot-feature h2{font-size:28px}}

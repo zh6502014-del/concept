@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="林艾奭的 NIGHTFALL DUEL 互動故事書作品集：從世界與人物，到故事模式規則、路線規劃與地圖拼合截圖，最後回到生存、利益與權利的問題。">
+<link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg">
+<meta name="author" content="林艾奭">
+<meta name="theme-color" content="#263e34">
+<title>NIGHTFALL DUEL｜互動故事書作品集 V0.3</title>
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/artwork.css">
+<link rel="stylesheet" href="./css/page-turn.css">
+<link rel="stylesheet" href="./css/book-layout.css">
+<link rel="stylesheet" href="./css/ui-system.css">
+<link rel="stylesheet" href="./css/fonts.css">
+</head>
+<body>
+<a class="skip-link" href="#reader">跳到故事書內容</a>
+<div class="shell">
+<div class="reading-layout">
+<nav class="sidebar-nav" aria-label="作品集導覽">
+<div class="nav-heading"><button class="icon-btn" data-action="toc" aria-label="開啟四章目錄" title="目錄"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14"/></svg></button><span class="nav-title">夜暮決鬥</span></div>
+<div class="chapters" role="group" aria-label="作品集四大章節" id="chapter-nav"></div>
+
+</nav>
+<main class="reader" id="reader" tabindex="-1" aria-label="故事書閱讀區"></main>
+</div>
+<footer class="reader-footer" aria-label="翻頁控制"><button id="prev" class="btn ghost" data-action="prev"><span aria-hidden="true">←</span> 上一頁</button><div class="footer-center"><strong id="page-type"></strong><button id="page-count" class="page-picker mono" data-action="pages" aria-label="選擇閱讀頁面" aria-haspopup="dialog"></button><span id="scroll-status" class="scroll-status"></span></div><button id="next" class="btn primary" data-action="next">下一頁 <span aria-hidden="true">→</span></button></footer>
+<div class="footer-bottom"><span class="ai-credit">內容由ＡＩ生成製作</span><button class="text-btn" style="padding:0;min-height:0;font-size:10px" data-action="about">版本與素材</button></div>
+</div>
+<div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="modal" class="modal" aria-labelledby="modal-title"><div class="modal-inner" id="modal-content"></div></dialog>
+<noscript><div style="padding:30px;text-align:center">這本互動故事書需要啟用 JavaScript，才能翻頁與瀏覽內容。</div></noscript>
+<script src="./js/content.js" defer></script>
+<script src="./js/page-turn.js" defer></script>
+<script src="./js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* V0.3 — book leaves, not a slideshow. No additional image assets required. */
+html{scrollbar-gutter:stable}
+.book.enter{animation:none}
+.reader{overflow-anchor:none}
+.shell.turn-busy .reader-footer .btn{cursor:progress}
+.reader.is-page-turning{isolation:isolate}
+.page-turn-viewport{
+  position:absolute;inset:0;width:100%;height:100%;z-index:8;
+  overflow:hidden;border-radius:2px;pointer-events:none;user-select:none;
+  box-shadow:0 4px 0 #d0d4c8,0 7px 0 #bec5b7,0 18px 30px -25px #1f302b44;
+}
+.page-turn-stage{
+  position:absolute;inset:0;width:100%;height:var(--turn-height);
+  perspective-origin:50% 40%;
+}
+.turn-base,.turn-loading-cover{
+  position:absolute;left:0;top:0;width:100%;height:var(--turn-height);overflow:hidden;
+}
+.turn-loading-cover{z-index:20}
+.turn-stationary{position:absolute;top:0;width:50%;height:100%;overflow:hidden;z-index:1}
+.stationary-left{left:0}.stationary-right{right:0}
+.turn-leaf{
+  position:absolute;top:0;width:50%;z-index:4;
+  transform-style:preserve-3d;will-change:transform;
+}
+.turn-forward .turn-leaf{left:50%;transform-origin:0 50%}
+.turn-backward .turn-leaf{left:0;transform-origin:100% 50%}
+.turn-face{
+  position:absolute;inset:0;width:100%;height:100%;overflow:hidden;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  outline:1px solid #756d5540;
+}
+.turn-front{transform:rotateY(0deg) translateZ(.4px)}
+.turn-back{transform:rotateY(180deg) translateZ(.4px)}
+.turn-snapshot.book{
+  position:absolute!important;top:0;margin:0!important;max-width:none!important;
+  box-shadow:none!important;animation:none!important;overflow:hidden;
+  pointer-events:none;box-sizing:border-box!important;
+}
+.turn-snapshot *,.turn-snapshot *::before,.turn-snapshot *::after{
+  animation:none!important;transition:none!important;caret-color:transparent!important;
+}
+.turn-snapshot .cover-index{backdrop-filter:none!important}
+.turn-face-shade{
+  position:absolute;inset:0;z-index:10;opacity:0;pointer-events:none;
+  background:linear-gradient(90deg,#0a171a94 0%,#34281219 14%,#fff5d824 45%,#05151761 100%);
+}
+.turn-back .turn-face-shade{transform:scaleX(-1)}
+.turn-cast-shadow{
+  position:absolute;top:0;width:48%;height:100%;left:50%;z-index:3;opacity:0;
+  transform-origin:left center;
+  background:linear-gradient(90deg,#09140de0,#0b191666 30%,transparent 100%);
+}
+.turn-backward .turn-cast-shadow{
+  left:2%;transform-origin:right center;
+  background:linear-gradient(270deg,#09140de0,#0b191666 30%,transparent 100%);
+}
+.turn-spine{
+  position:absolute;left:calc(50% - 14px);top:0;width:28px;height:100%;z-index:6;
+  background:linear-gradient(90deg,transparent,#15241d25 36%,#13251c78 50%,#fff5e432 53%,transparent);
+  pointer-events:none;opacity:0;
+}
+.turn-single .page-turn-stage{perspective-origin:0 35%}
+.turn-single .turn-leaf{left:0;width:100%;transform-origin:0 50%}
+.turn-single .turn-spine{left:0;width:16px}
+.turn-single .turn-cast-shadow{left:0;width:80%;transform-origin:left center;background:linear-gradient(90deg,#09140de0,#0b191666 30%,transparent)}
+.turn-blank{
+  background-image:linear-gradient(90deg,#7d74524a,transparent 22%),repeating-linear-gradient(0deg,#6d624909 0px,#6d624909 1px,transparent 1px,transparent 4px);
+}
+.turn-blank-dark{background-image:linear-gradient(90deg,#0006,transparent 22%),repeating-linear-gradient(0deg,#fff2 0px,#fff2 1px,transparent 1px,transparent 5px)}
+/* Keep an unchanged outer width on all pages. These layers never participate
+   in the book's content layout, and are removed after each animation. */
+@media print{.page-turn-viewport{display:none!important}.reader>.book{visibility:visible!important}.reader{height:auto!important}}
