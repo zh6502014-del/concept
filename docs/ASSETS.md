@@ -41,3 +41,5 @@
 ## 改編邊界
 
 作品集保留 4 × 4 路塊與 3 × 2 拼圖。遊戲的街區關卡與拼裝關卡有不同的尺寸、目標及情境，不宣稱兩者是相同關卡。角色頁的主題提問是作品集解讀，不是遊戲逐字對白。沒有修改 Game_claude 原始專案。
+
+- 2026-10-11：`story-gun`、`story-nameless`、`lab-dialogue`、`lab-battle`、`story-archive` 亦已由最新版遊戲重拍，`assets/images/screenshots/` 內八張截圖全部為當日擷取。`story-archive` 因 C4 劇情改寫，改用章節最後一句對話的畫面。
