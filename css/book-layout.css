@@ -56,7 +56,7 @@ body{background:radial-gradient(ellipse at 65% 10%,#f1f1e9 0,#e1e5dc 65%)}
 
 /* Photo variants only define arrangement and image fitting. */
 .ending-book .world-layout{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:30px;align-items:start}
-.ending-book .world-layout>div:first-child{padding-top:24px}
+.ending-book .world-layout>div:first-child{padding-top:0}
 .story-photo-stack,.world-photo-stack{position:relative;min-width:0;isolation:isolate}
 .story-photo-stack{aspect-ratio:1.03;margin:24px 0 36px}
 .world-photo-stack{aspect-ratio:.94;margin:20px 10px 30px}
@@ -138,7 +138,7 @@ body{background:radial-gradient(ellipse at 65% 10%,#f1f1e9 0,#e1e5dc 65%)}
 
 /* 故事設定：標題與說明貼齊頂端，不再因右側照片堆疊較高而垂直置中、留出大片空白。 */
 .world-layout:has(.world-photo-stack){align-items:start}
-.world-layout:has(.world-photo-stack)>div:first-child{padding-top:20px}
+.world-layout:has(.world-photo-stack)>div:first-child{padding-top:0}
 
 /* 手機版：章節欄改為頂端橫列，內文使用整個螢幕寬度。 */
 @media(max-width:680px){
@@ -166,3 +166,10 @@ body{background:radial-gradient(ellipse at 65% 10%,#f1f1e9 0,#e1e5dc 65%)}
 
 .story-photo img,.world-photo img{background:#1b2a23}
 .story-photo img{aspect-ratio:16/10;object-fit:cover}
+.screenshot-feature section>p.eyebrow{margin:0 0 14px;font-size:11px}
+.screenshot-feature h2{margin-top:0}
+
+/* 手機版頂端章節列：與書頁同色系的底色與邊框。 */
+@media(max-width:680px){
+ .sidebar-nav{background:#f4f2e8;border:1px solid var(--line);border-radius:var(--ui-radius,6px);padding:4px 6px;box-shadow:0 6px 16px -10px #20332b55}
+}
