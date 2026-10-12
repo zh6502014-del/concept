@@ -6,7 +6,7 @@ const CHAPTERS=[
  {n:'01',name:'設定與機制',full:'故事設定、角色設定、遊戲機制',sub:'WORLD / CHARACTERS / RULES',start:1,end:3},
  {n:'02',name:'主線任務',full:'主線任務：故事節選與場景',sub:'STORY / SCENE',start:4,end:4},
  {n:'03',name:'副本任務',full:'副本任務：路線規劃、地圖拼合與撐盾救援',sub:'EXPLORE / CONNECT / ASSEMBLE / HOLD',start:5,end:9},
- {n:'04',name:'回到原點',full:'生存、利益與科技帶來的權利不均',sub:'SURVIVAL / INTERESTS / RIGHTS',start:10,end:12}
+ {n:'04',name:'回到原點',full:'生存、利益與科技帶來的權利不均',sub:'SURVIVAL / INTERESTS / RIGHTS',start:10,end:11}
 ];
 const CHARACTERS=[
  {name:'凜',job:'刺客',code:'I',id:'rin',role:'閃避與反擊',desc:'以主動閃避化解關鍵攻擊，再伺機反擊。技能費用較低，讓玩家在保護凜與為隊友保留暮晶之間取捨。',play:'殘影｜2 暮晶：必定閃避下一次直接攻擊；閃過非遠距攻擊後，有 50% 機率穿盾反擊 1 HP。'},
