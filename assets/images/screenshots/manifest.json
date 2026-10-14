@@ -43,5 +43,6 @@
       "state": "playing, wave 1, about 1.5s after count-in",
       "sha256": "c67ebf98f458df710768b6dd627af204d157a0ebfedbd8ec87c994ec416a7072"
     }
-  ]
+  ],
+  "note": "Historical captures retained; latest export sizes and hashes are in assets/optimization-manifest.json. Dialogue, battle and nameless captures refreshed 2026-10-14."
 }

@@ -39,8 +39,8 @@ const ASSETS={
   },
   "lab-standoff": {
     "path": "assets/images/scenes/lab-standoff.webp",
-    "width": 1535,
-    "height": 864,
+    "width": 1600,
+    "height": 900,
     "title": "凜與赫爾曼在研究室對峙"
   },
   "world-map": {
@@ -51,38 +51,38 @@ const ASSETS={
   },
   "rin": {
     "path": "assets/images/characters/rin.webp",
-    "width": 853,
-    "height": 1280,
+    "width": 800,
+    "height": 1200,
     "title": "凜"
   },
   "shuo": {
     "path": "assets/images/characters/shuo.webp",
-    "width": 853,
-    "height": 1280,
+    "width": 800,
+    "height": 1200,
     "title": "朔"
   },
   "gran": {
     "path": "assets/images/characters/gran.webp",
-    "width": 853,
-    "height": 1280,
+    "width": 800,
+    "height": 1200,
     "title": "格蘭"
   },
   "eve": {
     "path": "assets/images/characters/eve.webp",
-    "width": 853,
-    "height": 1280,
+    "width": 800,
+    "height": 1200,
     "title": "伊芙"
   },
   "phosphor": {
     "path": "assets/images/characters/phosphor.webp",
-    "width": 853,
-    "height": 1280,
+    "width": 800,
+    "height": 1200,
     "title": "磷"
   },
   "herman": {
     "path": "assets/images/characters/herman.webp",
-    "width": 853,
-    "height": 1280,
+    "width": 800,
+    "height": 1200,
     "title": "赫爾曼"
   },
   "story-route": {
