@@ -12,16 +12,6 @@
       "sha256": "3a332ee3d32dcaf4f04f40d95f7f9b2438c7b7a6d737d812ccba72762680e2ac"
     },
     {
-      "source": "Game_claude/assets/story/complete-020/chapters/a2-lab-standoff.webp",
-      "path": "assets/images/scenes/lab-standoff.webp",
-      "sha256": "6b38e15bd3f8808150bfdd666b1cbf23b0bfb3fd7ba363358e07ac2d39f15e18"
-    },
-    {
-      "source": "Game_claude/assets/maps/nightfall-world-map-v1.webp",
-      "path": "assets/images/puzzles/world-map.webp",
-      "sha256": "6e008b536014baa2926cd28b68120184dd637fc299e0377a76bf89cee141ec81"
-    },
-    {
       "source": "Game_claude/assets/story/actors/rin.webp",
       "path": "assets/images/characters/rin.webp",
       "sha256": "3a931cf746b3d9c8b41038431043e14966366fe01539ddae264b5e61f1ae05c1"
@@ -42,94 +32,9 @@
       "sha256": "a6469919d24202a9edc71d7372916f26de0871b0397bdccb3a0b131f55e6af77"
     },
     {
-      "source": "Game_claude/assets/story/actors/phosphor.webp",
-      "path": "assets/images/characters/phosphor.webp",
-      "sha256": "ce8f7eb03e6b69ab8f2b577348ecef3cd18c076c7a25b9d1772fcea968934062"
-    },
-    {
-      "source": "Game_claude/assets/story/actors/herman.webp",
-      "path": "assets/images/characters/herman.webp",
-      "sha256": "cf1b8a7a9d09afc6b0bae8d2ff3b9d2c565197ce8c3fc11f3ce48384ea68a79f"
-    },
-    {
-      "source": "Game_claude/assets/cards/basic-v2/attack.webp",
-      "path": "assets/images/cards/attack.webp",
-      "sha256": "dee96c24ba615a2353a4065a678871e4f89b1aba10fe759627ce8b519b49009f"
-    },
-    {
-      "source": "Game_claude/assets/cards/basic-v2/defense.webp",
-      "path": "assets/images/cards/defense.webp",
-      "sha256": "bcfac0b59185b20ce1bd52d4412bdfb035c56dc2bc9f6410b8161210a70be881"
-    },
-    {
-      "source": "Game_claude/assets/cards/basic-v2/dodge.webp",
-      "path": "assets/images/cards/dodge.webp",
-      "sha256": "6a4bad74d8a21692225e55e9fcbfa683b682c7c22f89b75f07fb34d7629ab07f"
-    },
-    {
-      "source": "Game_claude/assets/cards/back-gold-v2.webp",
-      "path": "assets/images/cards/back.webp",
-      "sha256": "58074b34a6fcbba8eb915e91b60b0d3ad99b2aba5b4253d3b1a600de33c1b417"
-    },
-    {
-      "source": "Game_claude/assets/icons/attack.svg",
-      "path": "assets/svg/icons/attack.svg",
-      "sha256": "3418462f42e7843da62e628ae884ccfc117fc5e1966465646f16cd3e8f0f5702"
-    },
-    {
-      "source": "Game_claude/assets/icons/defense.svg",
-      "path": "assets/svg/icons/defense.svg",
-      "sha256": "2336fb08f88c741ebd988fbf7a5868019d67c91a131cba348c3bd675dc92ec3d"
-    },
-    {
-      "source": "Game_claude/assets/icons/dodge.svg",
-      "path": "assets/svg/icons/dodge.svg",
-      "sha256": "c6f5458130680102d11608bad1676584246ea7cd9b5c700bf6d46eeade9d3829"
-    },
-    {
       "source": "Game_claude/assets/icons/close.svg",
       "path": "assets/svg/icons/close.svg",
       "sha256": "81d50319dd1fe48a14d505f3f275397bd6bbf6b734c62037352fe4712eaf2969"
-    },
-    {
-      "source": "Game_claude/assets/icons/settings.svg",
-      "path": "assets/svg/icons/settings.svg",
-      "sha256": "de05a6bd3973ec4200ab1fbd43b740e677883fd84d90fdbccce4a8c1a5a22c63"
-    },
-    {
-      "source": "Game_claude/assets/icons/journal.svg",
-      "path": "assets/svg/icons/journal.svg",
-      "sha256": "b7212167740b64ab73ef697f8d5abc62e3375a3c3e644f3ce990e10972956859"
-    },
-    {
-      "source": "Game_claude/assets/icons/rules.svg",
-      "path": "assets/svg/icons/rules.svg",
-      "sha256": "6ff233874b1a82a67e231f4a7ec8149238fe7dea1fd95913e7cbfd31189e8d5e"
-    },
-    {
-      "source": "Game_claude/assets/icons/right.svg",
-      "path": "assets/svg/icons/right.svg",
-      "sha256": "7f17e989dfc75bcf39d37188717d3815bbdabbf595f3bf837efad30be2a47a2c"
-    },
-    {
-      "source": "Game_claude/src/js/story-maze.js + src/css/story-maze.css",
-      "path": "assets/svg/pipes/straight.svg",
-      "adaptation": "Export roadSvg and blocksSvg with the game palette; static SVG for portfolio rotations."
-    },
-    {
-      "source": "Game_claude/src/js/story-maze.js + src/css/story-maze.css",
-      "path": "assets/svg/pipes/straight-connected.svg",
-      "adaptation": "Export roadSvg and blocksSvg with the game palette; static SVG for portfolio rotations."
-    },
-    {
-      "source": "Game_claude/src/js/story-maze.js + src/css/story-maze.css",
-      "path": "assets/svg/pipes/elbow.svg",
-      "adaptation": "Export roadSvg and blocksSvg with the game palette; static SVG for portfolio rotations."
-    },
-    {
-      "source": "Game_claude/src/js/story-maze.js + src/css/story-maze.css",
-      "path": "assets/svg/pipes/elbow-connected.svg",
-      "adaptation": "Export roadSvg and blocksSvg with the game palette; static SVG for portfolio rotations."
     }
   ]
 }

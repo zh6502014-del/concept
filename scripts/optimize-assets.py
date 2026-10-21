@@ -8,6 +8,10 @@ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 size=lambda p:sum(f.stat().st_size for f in p.rglob('*') if f.is_file())
 before=size(ROOT/'assets')
 records=[]
+# Aggressive web profile (2026-10-21): (longest edge px, WebP quality). Per-file entries win over per-folder ones.
+# Display widths are <=~520 css px, so 2x density is covered. Background art sits under dark gradients and can be softer.
+PROFILE={'characters':(960,74),'scenes':(1280,70),'puzzles':(1280,70),'cards':(768,72),'screenshots':(1000,72),
+ 'vesperland':(1280,66),'research-lab':(1024,62),'world-nightfall':(800,70),'world-bell':(800,70),'world-crystal':(256,80)}
 paths=json.loads((GAME/'docs/assets-path-map-2026-10-09.json').read_text())['files']
 manifest=json.loads((ROOT/'assets/game-claude-manifest.json').read_text())
 source_map={e['path']: GAME/paths.get(e['source'].replace('Game_claude/',''),e['source'].replace('Game_claude/','')) for e in manifest['assets'] if e['path'].endswith('.webp')}
@@ -20,12 +24,12 @@ for dst in (ROOT/'assets/images').rglob('*.webp'):
  old=dst.stat().st_size;oldhash=sha(dst);sourcehash=sha(src)
  im=Image.open(src);im.load();original=im.size
  # Preserve readable screenshot resolution and transparent actor edges.
- cap=1200 if dst.parent.name=='characters' else 1600
- im.thumbnail((cap,cap),Image.Resampling.LANCZOS)
- buf=io.BytesIO();im.save(buf,format='WEBP',quality=82,method=6,alpha_quality=100)
+ cap,q=PROFILE.get(dst.stem) or PROFILE[dst.parent.name]
+ if max(im.size)>cap:im.thumbnail((cap,cap),Image.Resampling.LANCZOS)
+ buf=io.BytesIO();im.save(buf,format='WEBP',quality=q,method=6,alpha_quality=90 if im.mode=='RGBA' else 100)
  data=buf.getvalue()
- # Do not recompress an already smaller identical current export.
- if src==dst or (sourcehash==oldhash and len(data)>=old):data=dst.read_bytes()
+ # Never replace a file with a larger re-encode (already-lean exports stay as they are).
+ if len(data)>=old and max(original)<=cap:data=dst.read_bytes()
  dst.write_bytes(data)
  records.append({'path':rel,'source':str(src.relative_to(ROOT)) if src.is_relative_to(ROOT) else str(src.relative_to(GAME)),'sourceProject':'portfolio' if src.is_relative_to(ROOT) else 'Game_claude','sourceSha256':sourcehash,'sha256':sha(dst),'bytesBefore':old,'bytesAfter':len(data),'width':Image.open(dst).width,'height':Image.open(dst).height,'sourceDimensions':original})
 # Retain complete unicode slices needed by all authored strings, including UI symbols.
@@ -44,7 +48,9 @@ for block in blocks:
   target=ROOT/'assets/fonts/noto-serif-tc'/name;target.write_bytes((GAME/'assets/fonts/noto-serif-tc'/name).read_bytes())
   kept.append(re.sub(r'(?:\.\./)+assets/', '../assets/',block))
 for p in (ROOT/'assets/fonts/noto-serif-tc').glob('*.woff2'):
- if p.name not in names:p.unlink()
+ if p.name not in names:
+  try:p.unlink()
+  except PermissionError:print('unused font slice (delete manually):',p.name)
 (ROOT/'css/fonts.css').write_text('/* Used Noto Serif TC unicode slices. Regenerate with scripts/optimize-assets.py after copy changes. */\n'+'\n'.join(kept)+'\n:root{--typeface:"Noto Serif TC",serif;--serif:var(--typeface);--sans:var(--typeface);--mono:var(--typeface)}\n')
 # Synchronize dimension metadata with compressed exports.
 p=ROOT/'js/content.js';content=p.read_text()
@@ -52,6 +58,6 @@ for r in records:
  pattern=r'("path": "'+re.escape(r['path'])+r'",\s*"width": )\d+(,\s*"height": )\d+'
  content=re.sub(pattern,lambda m:m[1]+str(r['width'])+m[2]+str(r['height']),content)
 p.write_text(content)
-report={'updatedAt':'2026-10-14','assetsBytesBefore':before,'assetsBytesAfter':size(ROOT/'assets'),'fontSlicesBefore':len(blocks),'fontSlicesAfter':len(kept),'images':records}
+report={'updatedAt':'2026-10-21','assetsBytesBefore':before,'assetsBytesAfter':size(ROOT/'assets'),'fontSlicesBefore':len(blocks),'fontSlicesAfter':len(kept),'images':records}
 (ROOT/'assets/optimization-manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k!='images'},indent=2))

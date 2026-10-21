@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-10-14",
-  "assetsBytesBefore": 9131948,
-  "assetsBytesAfter": 5531092,
+  "updatedAt": "2026-10-21",
+  "assetsBytesBefore": 3918216,
+  "assetsBytesAfter": 3209180,
   "fontSlicesBefore": 108,
-  "fontSlicesAfter": 29,
+  "fontSlicesAfter": 28,
   "images": [
     {
       "path": "assets/images/scenes/world-bell.webp",
       "source": "assets/story/illustrations/chapters/prologue-bell-prayer.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "0ed6fafcd0d485b64831aa2261e8d1c91d1c0fc13f5f8887046adb17543249af",
-      "sha256": "9ab7b4228eb6e56c68b83148a2bda13e33da681bc1f3c73c0aab3450858bc7c0",
-      "bytesBefore": 265708,
-      "bytesAfter": 265708,
-      "width": 1600,
-      "height": 900,
+      "sha256": "0a3924412aef75e913715b5fc2d184af112982eb778968be4e9a7740141b7972",
+      "bytesBefore": 74652,
+      "bytesAfter": 74652,
+      "width": 800,
+      "height": 450,
       "sourceDimensions": [
         1672,
         941
@@ -25,9 +25,9 @@
       "source": "assets/story/props/archive-crystal.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "628453c45888c6ee789962dd48b23aa9434c06fe3d2c931113b4c856001b8c08",
-      "sha256": "74a5b2335b66189a08bae75a3119540be1f232b32c8941802a65915a9f4e1ca0",
-      "bytesBefore": 10092,
-      "bytesAfter": 10092,
+      "sha256": "36c4b8d74bf3e54e15add78ee5f7df7e07add0827b926b3c7fb6523eba160bbe",
+      "bytesBefore": 9196,
+      "bytesAfter": 9196,
       "width": 196,
       "height": 190,
       "sourceDimensions": [
@@ -40,11 +40,11 @@
       "source": "assets/story/illustrations/chapters/prologue-vesperland.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "e8846656841544529b67f2902c0692349657fedff33e762b69eca98fd6be1401",
-      "sha256": "93c625bf80b1e4a7f1d6eb8c28cd0f3c4a267840f2245c133a1aeb8d29251b9a",
-      "bytesBefore": 176394,
-      "bytesAfter": 176394,
-      "width": 1535,
-      "height": 864,
+      "sha256": "0513513b74a0bbdc90b13e5397cba0a6e2f6767f02569c48921b4ae96497c8cb",
+      "bytesBefore": 90518,
+      "bytesAfter": 90518,
+      "width": 1280,
+      "height": 720,
       "sourceDimensions": [
         1535,
         864
@@ -55,11 +55,11 @@
       "source": "assets/story/illustrations/chapters/prologue-nightfall.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "596458e3730a2a42640036a4dfef1ff576400e854d7b171322bfc2c136e19932",
-      "sha256": "1178637c278739f3fb2aa2a649a0df897e3c522fe73d45d4699f0254fab7705c",
-      "bytesBefore": 255508,
-      "bytesAfter": 255508,
-      "width": 1535,
-      "height": 864,
+      "sha256": "9e2b4437084726c480d691b15b423aa6a796fa31fb8337706f92f84703dc9f86",
+      "bytesBefore": 63986,
+      "bytesAfter": 63986,
+      "width": 800,
+      "height": 450,
       "sourceDimensions": [
         1535,
         864
@@ -70,29 +70,14 @@
       "source": "assets/story/backgrounds/lab.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "3a332ee3d32dcaf4f04f40d95f7f9b2438c7b7a6d737d812ccba72762680e2ac",
-      "sha256": "3a332ee3d32dcaf4f04f40d95f7f9b2438c7b7a6d737d812ccba72762680e2ac",
-      "bytesBefore": 190148,
-      "bytesAfter": 190148,
-      "width": 1599,
-      "height": 900,
+      "sha256": "dc6306768a8af583f348c711238eac2c327ad9c89859312a6c4908071f97ca1a",
+      "bytesBefore": 72330,
+      "bytesAfter": 72330,
+      "width": 1024,
+      "height": 576,
       "sourceDimensions": [
         1599,
         900
-      ]
-    },
-    {
-      "path": "assets/images/scenes/lab-standoff.webp",
-      "source": "assets/story/illustrations/chapters/a2-lab-standoff.webp",
-      "sourceProject": "Game_claude",
-      "sourceSha256": "76c854a62843fd159659f98df3f0dbbca55f86ad6e427094c9a12d82c0a2021b",
-      "sha256": "e9431bda9783eb902fd0ddc8a2fdfdabeeb9847de60270401c39eb40db428a68",
-      "bytesBefore": 182524,
-      "bytesAfter": 182524,
-      "width": 1600,
-      "height": 900,
-      "sourceDimensions": [
-        1672,
-        941
       ]
     },
     {
@@ -100,11 +85,11 @@
       "source": "source-screenshots/lab-dialogue.png",
       "sourceProject": "portfolio",
       "sourceSha256": "91edc2236a02826db2d05ecf9593f0191a50157f8db0fdf61eefb8979be9c3ae",
-      "sha256": "3f7eb72b5c0acf9e24618eac45929e820a493e78c126ec3e3e93166c174905d5",
-      "bytesBefore": 119456,
-      "bytesAfter": 119456,
-      "width": 1440,
-      "height": 900,
+      "sha256": "d715a5bf74d734e00d36ea79d77e5959afbdd54d47b2efd6a47c7a4fabdf1445",
+      "bytesBefore": 56288,
+      "bytesAfter": 56288,
+      "width": 1000,
+      "height": 625,
       "sourceDimensions": [
         1440,
         900
@@ -115,9 +100,9 @@
       "source": "source-screenshots/story-route.png",
       "sourceProject": "portfolio",
       "sourceSha256": "4428a7fa5915524ffee8c86858c4757ada0eb2aa76191225478977e5b712e5ef",
-      "sha256": "33bad069bd0acc6043be53db24331508efe8caf649f0f689e61a33ec5b42a19d",
-      "bytesBefore": 49022,
-      "bytesAfter": 49022,
+      "sha256": "bb09a1ec668c716388dd47064b7846c2d850d8eb07bdca2d57e3e592abfa4cef",
+      "bytesBefore": 35928,
+      "bytesAfter": 35928,
       "width": 600,
       "height": 870,
       "sourceDimensions": [
@@ -126,30 +111,15 @@
       ]
     },
     {
-      "path": "assets/images/screenshots/story-gun.webp",
-      "source": "source-screenshots/story-gun.png",
-      "sourceProject": "portfolio",
-      "sourceSha256": "8e1d3ca523f51e933bd64cb208b6941ac2ae1cef4b986d0bc50f9b222d949993",
-      "sha256": "6e3ba2c8087a026a0d2c00df9cfb60b68af116a2c7bf3a22727195ece60c970e",
-      "bytesBefore": 41262,
-      "bytesAfter": 41262,
-      "width": 1040,
-      "height": 898,
-      "sourceDimensions": [
-        1040,
-        898
-      ]
-    },
-    {
       "path": "assets/images/screenshots/lab-battle.webp",
       "source": "source-screenshots/lab-battle.png",
       "sourceProject": "portfolio",
       "sourceSha256": "7c00dcc9c15feaec9ad10c4bec03272404717c36c74fd88b9c3b2ff498db6b6e",
-      "sha256": "5fecb9fadd710cad6588fe38e2e949fe481331fcd972d70d95da773e962bc0f2",
-      "bytesBefore": 68744,
-      "bytesAfter": 68744,
-      "width": 1440,
-      "height": 900,
+      "sha256": "6a3ed42a59060bd96d6f21804c05c52728e448ed994223abf3104d660361f6b2",
+      "bytesBefore": 25106,
+      "bytesAfter": 25106,
+      "width": 1000,
+      "height": 625,
       "sourceDimensions": [
         1440,
         900
@@ -160,11 +130,11 @@
       "source": "source-screenshots/story-map-puzzle.png",
       "sourceProject": "portfolio",
       "sourceSha256": "c1fa310febd8af22ed86c633a09600ca5597009c5ea914fcec0e8830cd517beb",
-      "sha256": "5f01c2f15d5c7bc41e6d9afdbb218351899078bb553ac43c819a323c69335762",
-      "bytesBefore": 77310,
-      "bytesAfter": 77310,
-      "width": 1040,
-      "height": 1212,
+      "sha256": "17c13234859f7f6590900dcb6fe497b933178033067b1586cffc43bb04488a2c",
+      "bytesBefore": 39154,
+      "bytesAfter": 39154,
+      "width": 858,
+      "height": 1000,
       "sourceDimensions": [
         1040,
         1212
@@ -175,11 +145,11 @@
       "source": "source-screenshots/story-archive.png",
       "sourceProject": "portfolio",
       "sourceSha256": "e6db2da417229a967a4042b57ef708ff622457b143cf8dc79dec9dc541aa90e9",
-      "sha256": "d55f58d4d18fe6dcf5384e51ae906516136f25731d77c96bdbf7f77280bfd559",
-      "bytesBefore": 106898,
-      "bytesAfter": 106898,
-      "width": 1440,
-      "height": 900,
+      "sha256": "e5d76a9e02a7067fda3dfd9e7afe805fa2d93e04c84819699d3c5c5bc2f7ee3f",
+      "bytesBefore": 46570,
+      "bytesAfter": 46570,
+      "width": 1000,
+      "height": 625,
       "sourceDimensions": [
         1440,
         900
@@ -190,11 +160,11 @@
       "source": "source-screenshots/story-nameless.png",
       "sourceProject": "portfolio",
       "sourceSha256": "c6c123ce9cdc6fc3b0c17b343cf2e248c98da538e9de68c73faa2814725b0204",
-      "sha256": "4248043f7c60690b824a07ac70e77343f6a3d025cb2ca430e144bc2d5726ab3f",
-      "bytesBefore": 79438,
-      "bytesAfter": 79438,
-      "width": 1440,
-      "height": 900,
+      "sha256": "e6639948b0c76e2d6880310a26d4c16851362e1a5d3dfd1c1c5e8452edcc23ef",
+      "bytesBefore": 30914,
+      "bytesAfter": 30914,
+      "width": 1000,
+      "height": 625,
       "sourceDimensions": [
         1440,
         900
@@ -205,9 +175,9 @@
       "source": "source-screenshots/story-shield-rhythm.png",
       "sourceProject": "portfolio",
       "sourceSha256": "54b61ce172926a9fcf1644df92ca53d22cc50c85e1494f59bc7ce648e321bf0d",
-      "sha256": "c9baebe9233173a5923caf306b03f10ff609a718507a677986f0066a2e3a94ad",
-      "bytesBefore": 86730,
-      "bytesAfter": 86730,
+      "sha256": "7d455f1ae32cf552348313997f74106c353cd1f02fa02949c4fa1786d2b568af",
+      "bytesBefore": 64318,
+      "bytesAfter": 64318,
       "width": 960,
       "height": 716,
       "sourceDimensions": [
@@ -216,120 +186,15 @@
       ]
     },
     {
-      "path": "assets/images/cards/back.webp",
-      "source": "assets/cards/back-gold-v2.webp",
-      "sourceProject": "Game_claude",
-      "sourceSha256": "58074b34a6fcbba8eb915e91b60b0d3ad99b2aba5b4253d3b1a600de33c1b417",
-      "sha256": "69e9d6b2e6819da69bc2712854022d081f9bcceea7dd8c521c66cec141ce1f38",
-      "bytesBefore": 24888,
-      "bytesAfter": 24888,
-      "width": 512,
-      "height": 717,
-      "sourceDimensions": [
-        512,
-        717
-      ]
-    },
-    {
-      "path": "assets/images/cards/attack.webp",
-      "source": "assets/cards/basic-v2/attack.webp",
-      "sourceProject": "Game_claude",
-      "sourceSha256": "dee96c24ba615a2353a4065a678871e4f89b1aba10fe759627ce8b519b49009f",
-      "sha256": "eff6a747efb43d877b9b147c8a0bfb703a94096937ad0a13b238d543f9c22d3a",
-      "bytesBefore": 32878,
-      "bytesAfter": 32878,
-      "width": 512,
-      "height": 768,
-      "sourceDimensions": [
-        512,
-        768
-      ]
-    },
-    {
-      "path": "assets/images/cards/dodge.webp",
-      "source": "assets/cards/basic-v2/dodge.webp",
-      "sourceProject": "Game_claude",
-      "sourceSha256": "6a4bad74d8a21692225e55e9fcbfa683b682c7c22f89b75f07fb34d7629ab07f",
-      "sha256": "e92fcb978a58ff1257348ea15605017e454ae974f3bd67aa348a4627064e37c9",
-      "bytesBefore": 33434,
-      "bytesAfter": 33434,
-      "width": 512,
-      "height": 768,
-      "sourceDimensions": [
-        512,
-        768
-      ]
-    },
-    {
-      "path": "assets/images/cards/defense.webp",
-      "source": "assets/cards/basic-v2/defense.webp",
-      "sourceProject": "Game_claude",
-      "sourceSha256": "bcfac0b59185b20ce1bd52d4412bdfb035c56dc2bc9f6410b8161210a70be881",
-      "sha256": "89af671a31ffde518117c19ea723e165ce66f1d02a0fe3d0ea19955a22b741a8",
-      "bytesBefore": 49456,
-      "bytesAfter": 49456,
-      "width": 512,
-      "height": 768,
-      "sourceDimensions": [
-        512,
-        768
-      ]
-    },
-    {
-      "path": "assets/images/puzzles/world-map.webp",
-      "source": "assets/images/puzzles/world-map.webp",
-      "sourceProject": "portfolio",
-      "sourceSha256": "6e008b536014baa2926cd28b68120184dd637fc299e0377a76bf89cee141ec81",
-      "sha256": "6e008b536014baa2926cd28b68120184dd637fc299e0377a76bf89cee141ec81",
-      "bytesBefore": 268960,
-      "bytesAfter": 268960,
-      "width": 1599,
-      "height": 900,
-      "sourceDimensions": [
-        1599,
-        900
-      ]
-    },
-    {
-      "path": "assets/images/characters/herman.webp",
-      "source": "assets/story/actors/herman.webp",
-      "sourceProject": "Game_claude",
-      "sourceSha256": "cf1b8a7a9d09afc6b0bae8d2ff3b9d2c565197ce8c3fc11f3ce48384ea68a79f",
-      "sha256": "f04ef0954100801b457f26a40b42b75c85a940aa90ea61c46d12f0554bbe4f30",
-      "bytesBefore": 196082,
-      "bytesAfter": 196082,
-      "width": 800,
-      "height": 1200,
-      "sourceDimensions": [
-        853,
-        1280
-      ]
-    },
-    {
-      "path": "assets/images/characters/phosphor.webp",
-      "source": "assets/story/actors/phosphor.webp",
-      "sourceProject": "Game_claude",
-      "sourceSha256": "ce8f7eb03e6b69ab8f2b577348ecef3cd18c076c7a25b9d1772fcea968934062",
-      "sha256": "189af86d958141da4749c7e62759c3956e84011aa4c0cf7f1f15ac59b3461c59",
-      "bytesBefore": 210948,
-      "bytesAfter": 210948,
-      "width": 800,
-      "height": 1200,
-      "sourceDimensions": [
-        853,
-        1280
-      ]
-    },
-    {
       "path": "assets/images/characters/rin.webp",
       "source": "assets/story/actors/rin.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "3a931cf746b3d9c8b41038431043e14966366fe01539ddae264b5e61f1ae05c1",
-      "sha256": "69922eff527640e569955c3ded7594537a609d7f36796b996843479afbead219",
-      "bytesBefore": 245014,
-      "bytesAfter": 245014,
-      "width": 800,
-      "height": 1200,
+      "sha256": "046e4bcd5e25db0efcbd81f170bb9afb844a05edad34fc73b25fa127be8b7269",
+      "bytesBefore": 147658,
+      "bytesAfter": 147658,
+      "width": 640,
+      "height": 960,
       "sourceDimensions": [
         853,
         1280
@@ -340,11 +205,11 @@
       "source": "assets/story/actors/shuo.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "de2cd0979a15813c31c57dbba352eed86ac8d90dbfe623b02a58450ee0d216ca",
-      "sha256": "57ddba504abcad04c240660374a06fd393144b9d061c0800d3065eaa7229e265",
-      "bytesBefore": 178150,
-      "bytesAfter": 178150,
-      "width": 800,
-      "height": 1200,
+      "sha256": "1213f89e6bb4c00b3a5dbe7a5b66834aaad9e02931621ab6e67cf49a79b2bd0f",
+      "bytesBefore": 103264,
+      "bytesAfter": 103264,
+      "width": 640,
+      "height": 960,
       "sourceDimensions": [
         853,
         1280
@@ -355,11 +220,11 @@
       "source": "assets/story/actors/eve.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "957720dcd518ea63ea8ac16b0f0f6ec90a0f2d98a6d65a047dff80e8ed48bd0a",
-      "sha256": "a4fc475108668432e9929f5cd5f27c84cc51f401ff2f91be8ca8fc65d5b5e649",
-      "bytesBefore": 199044,
-      "bytesAfter": 199044,
-      "width": 800,
-      "height": 1200,
+      "sha256": "178816b506686c675ac1deb74ae2be7c5441b473a19b557b6b990e8f71d51aa9",
+      "bytesBefore": 118452,
+      "bytesAfter": 118452,
+      "width": 640,
+      "height": 960,
       "sourceDimensions": [
         853,
         1280
@@ -370,11 +235,11 @@
       "source": "assets/story/actors/gran.webp",
       "sourceProject": "Game_claude",
       "sourceSha256": "6336478de8e0a47d7946370a47b661c5012837e46c5e37de928b153307c7fcb0",
-      "sha256": "36ab7c9264d930737dc1f09a5b4ae63060bc5239d8c534da3bef6a6318bcef1c",
-      "bytesBefore": 242408,
-      "bytesAfter": 242408,
-      "width": 800,
-      "height": 1200,
+      "sha256": "507620895e3934e704b7f4a5c20f06d22a69f705a6f6ed8a48a7f5be345f695a",
+      "bytesBefore": 144858,
+      "bytesAfter": 144858,
+      "width": 640,
+      "height": 960,
       "sourceDimensions": [
         853,
         1280
